@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Ejercicio 1</title>
+ <meta charset="UTF-8">
+ 	<title>Formularios basicos</title>
+ </head>
+ <body style="background-color: #dfd9d9;margin: 0;" >
+  <center>
+    <div class="container" style="background-color: #ffffff; max-width: 600px;box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);text-align: left;">
+  
+      <header><strong>Datos de registro</strong></header>
+     <form> 
+       <fieldset>
+    <fieldset>
+     <legend><strong>información personal</strong></legend>
+     <label for="nombre">Nombre:</label>
+     <input type="text"name="nombre"size="50" minlength="4" required placeholder="Ingrese su nombre completo">
+     <br>
+     <label for="edad">Edad:</label> 
+     <input type="number"name="edad"size="15" required min="1" max="99" placeholder="Ingrese su edad">
+     <br>
+     <label for="fecha">Fecha de nacimiento:</label> 
+     <input type="date"name="fecha"size="15" required>
+     <br>
+     </fieldset>
+     <fieldset>
+       <legend><strong>Informacion de contacto</strong></legend>
+     <label for="numero">numero de telefono:</label> 
+     <input type="number"name="numero"size="10" required placeholder="Ingrese su numero de telefono">
+     <br>
+     <label for="email">Correo electronico:</label> 
+     <input type="text"name="email"size="15" required placeholder="Ingrese su correo electronico">
+     <br>
+     </fieldset>
+     <fieldset>
+       <legend><strong>Carrera deseada</strong></legend>
+      <label for="Carrera">Carrera deseada:</label>
+       <select>
+      <option>Ingenieria electronica</option>
+      <option>Ingenieria de sistemas</option>
+      <option>Ingenieria mecanica</option>
+      <option>Ingenieria aeronautica</option>
+      <option>Ingenieria cuantica</option>
+    </select>
+    <label for="Homologacion">Tiene alguna homologacion disponible?:</label>
+     <select>
+       <option>Si</option>
+       <option>No</option>
+     </select>
+     </fieldset>
+    
+      <fieldset>
+       <legend><strong>Selecciona tus hobbies</strong></legend>
+      <label>Hobbies:</label><br> 
+       <table>
+          <tr>
+            <td><input type="checkbox" id="lectura" name="hobbies[]" value="lectura"></td>
+            <td><label for="lectura">Lectura</label></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="escritura" name="hobbies[]" value="escritura"></td>
+            <td><label for="escritura">Escritura</label></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="pintura" name="hobbies[]" value="pintura"></td>
+            <td><label for="pintura">Pintura</label></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="fotografia" name="hobbies[]" value="fotografia"></td>
+            <td><label for="fotografia">Fotografía</label></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="deportes" name="hobbies[]" value="deportes"></td>
+            <td><label for="deportes">Deportes</label></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" id="musica" name="hobbies[]" value="musica"></td>
+            <td><label for="musica">Música</label></td>
+          </tr>
+        </table>  
+        </fieldset>
+    <fieldset>
+            <legend><strong>Comentarios</strong></legend>          
+                <textarea id="Comentarios" name="Comentarios" required placeholder="Escriba sus Comentarios" rows="4"></textarea>
+                </fieldset>
+      
+       <input type="submit"value="enviar" style="background-color: #45a049;">
+     <input type="reset"value="borrar">
+    </fieldset>
+     
+     </form>
+     
+       </div>
+  </center>
+
+
+ </body>
+ </html>
